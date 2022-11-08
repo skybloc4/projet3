@@ -184,10 +184,14 @@ integerValue = 342 # renvoie 342
 stringIntegerValue = str(342) # renvoie "342"
 
 
+# exercice1 
+# faire une fonction qui concatene 2 chaines de caractere, les séparant par une virgule 
 
-
-
-
+# exercice2 
+# faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaîne de carectere 
+# avec l'ensembles des accurence d'un chiffre e.g.: 
+# pour tableau = [0,1,1,1,0,1,1,0,1]
+# la fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hesitez pas a implementer la premiere fonction 
 
 
 
