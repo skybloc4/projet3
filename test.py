@@ -169,8 +169,7 @@
 
 tableau = [0,8,985,54,3,2914,15,194,7]
 
-# Pour Recuperer 15 je prends dans tableau l'index 15
-
+# Pour Recuperer 15 je prends dans tableau l'index 6
 print(tableau[6]) # Afficher 15
 
 len(tableau) # renvoie la longueur de tableau 
@@ -187,11 +186,58 @@ stringIntegerValue = str(342) # renvoie "342"
 # exercice1 
 # faire une fonction qui concatene 2 chaines de caractere, les séparant par une virgule 
 
+
+def concatWithComma(strA, strB):
+# Definir la fonction concatWithComma qui prend comme parametre strA et strB
+    stringifiedStrA = str(strA)
+    # Assigner a stringifiedStrA le retour de l'execution de la fonction str with comme parametre strA 
+    stringifiedStrB = str(strB)
+    # Assigner a stringifiedStrB le retour de l'execution de la fonction str with comme parametre strB
+    chaineResultat = stringifiedStrA + ", " + stringifiedStrB 
+    # Assigner a chaineResultat la concatenation de stringifiedStrA, de la chaine ", " et de stringifiedStrB
+    return chaineResultat 
+    # Retourne chaineResultat
+
+
+
+
+
 # exercice2 
 # faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaîne de carectere 
 # avec l'ensembles des accurence d'un chiffre e.g.: 
 # pour tableau = [0,1,1,1,0,1,1,0,1]
 # la fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hesitez pas a implementer la premiere fonction 
+
+
+
+tableau = [0,1,1,1,0,1,1,0,1]
+# Definir la fonction findIndexes with comme parametre une liste de tableau et x quelconque
+def findIndexes(tableau, x):
+    # Definir i egal a 0 
+    i = 0 
+    # Assigner un caractere vide a chaineRetour
+    chaineRetour = ""
+    # Tant que i est inferieur a la len du tableau 
+    while i < len(tableau):
+        # Alors assigner selected a la valeur du tableau 
+        selected = tableau[i]
+        # Si selected est egal a x 
+        if selected == x:
+            # Alors 
+            # Si isfirst est vrai
+            
+                # Alors on assigne a chaineRetour la valeur de i
+                # Changer isfirst a faux
+            # Sinon
+                # On assigne a chaineRetour le retour de l'execution de la fonction concatWithComma
+                # with comme parametre chaineRetour et i
+                chaineRetour = concatWithComma(chaineRetour, i)
+           # Assigner i a l'adition de i plus 1
+         i = i + 1
+      # Retourne chaineRetour 
+      return chaineRetour
+
+
 
 
 
